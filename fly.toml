@@ -35,4 +35,4 @@ console_command = 'php /var/www/html/artisan tinker'
 
 # THÊM 2 DÒNG NÀY VÀO CUỐI FILE:
 [deploy]
-  release_command = "php artisan config:clear && php artisan migrate --force"
+  release_command = "bash -c 'php artisan config:clear && php artisan migrate --force'"
