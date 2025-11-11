@@ -1,0 +1,10 @@
+/* Đây là 3 dòng quan trọng nhất,
+chúng "gọi" toàn bộ thư viện Tailwind vào
+*/
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* Bạn có thể thêm các class CSS tùy chỉnh
+của riêng mình ở dưới đây nếu muốn
+*/
