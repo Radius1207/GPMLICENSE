@@ -2,7 +2,6 @@
 
 namespace App\Models;
 
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
@@ -62,4 +61,4 @@ class User extends Authenticatable
         return $this->hasMany(Order::class);
     }
 }
-// SỬA LỖI: Đã xóa dấu '}' bị thừa ở đây
+// SỬA LỖI: Dấu '}' bị thừa ở đây đã được xóa.
