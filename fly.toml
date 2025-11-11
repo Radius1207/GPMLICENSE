@@ -17,7 +17,7 @@ console_command = 'php /var/www/html/artisan tinker'
   LOG_CHANNEL = 'stderr'
   LOG_LEVEL = 'info'
   LOG_STDERR_FORMATTER = 'Monolog\Formatter\JsonFormatter'
-  SESSION_DRIVER = 'cookie'
+  SESSION_DRIVER = 'cookie' # Dòng này OK, vì secret "file" sẽ ghi đè lên nó
   SESSION_SECURE_COOKIE = 'true'
 
 [http_service]
@@ -32,3 +32,7 @@ console_command = 'php /var/www/html/artisan tinker'
   memory = '1gb'
   cpu_kind = 'shared'
   cpus = 1
+
+# THÊM 2 DÒNG NÀY VÀO CUỐI FILE:
+[deploy]
+  release_command = "php artisan migrate --force"
